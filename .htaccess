@@ -1,0 +1,33 @@
+#error handling
+ErrorDocument 400 https://%{HTTP_HOST}/index
+ErrorDocument 401 https://%{HTTP_HOST}/index
+ErrorDocument 403 https://%{HTTP_HOST}/index
+ErrorDocument 404 https://%{HTTP_HOST}/index
+ErrorDocument 500 https://%{HTTP_HOST}/index
+
+#defines a default type for the charset of the files
+AddDefaultCharset utf-8
+
+#blocks access to file listings
+Options -Indexes
+
+#block access to same files
+<FilesMatch "\.(sql|ini|txt|json|ini|mwb|bak|md)$">
+    Deny from all
+</FilesMatch>
+
+#block access to php class files
+<FilesMatch "\.data.php">
+    Deny from all
+</FilesMatch>
+
+#block access to interface files
+<FilesMatch "\.ui.php">
+    Deny from all
+</FilesMatch>
+
+#remove PHP file extensions
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

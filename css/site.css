@@ -1,0 +1,360 @@
+/* @author Maik Basso <maik@maikbasso.com.br> */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #eeeeee;
+    font-family: Arial;
+}
+
+header .menu{
+    background: #333333;
+    height: 40px;
+    width: 100%;
+    display: table;
+}
+
+header .menu ul.items{
+    list-style: none;
+    margin-left: 50px;
+}
+
+header .menu ul.items li{
+    float: left;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-right: 20px;
+    border: none;
+}
+
+header .menu ul.items li a{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header .menu ul.items li a:hover{
+    color: #999999;
+}
+
+@media(max-width: 1024px){
+    header .menu ul.items{
+        display: none;
+        margin: 0;
+        margin-top: 5px;
+        position: absolute;
+    }
+    
+    header .menu ul.items li{
+        width: 97.5%;        
+        background: #333333;
+        text-align: left;
+        padding-left: 2.5%;
+        border-top: 1px solid #999999;
+    }
+    
+    header .menu .menu-mobile{
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        display: table;
+        cursor: pointer;
+    }
+    header .menu .menu-mobile .button{
+        width: 40px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    header .menu .menu-mobile .button .bar-h{
+        width: 100%;
+        height: 2.5px;
+        margin-top: 7px;
+        background: #ffffff;
+    }
+    header .menu .menu-mobile .button .bar-v{
+        height: 100%;
+        width: 2.5px;
+        float: left;
+        margin-left: 7px;
+        margin-top: 10%;
+        background: #ffffff;
+    }
+}
+
+.page{
+    width: 1024px;
+    box-shadow: #333333 0px 0px 10px;
+    margin: 0 auto;
+    display: table;
+    background: #ffffff;
+}
+
+.page .page-header{
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    max-width: 100%;
+}
+.page .page-header .left{
+    padding: 10px;
+    float: left;
+}
+.page .page-header .left .photo{
+    background-image: url(../img/profile.jpg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: 90%;
+}
+.page .page-header .right{
+    float: left;
+    text-align: left;
+    height: 203px;
+    padding: 10px;
+}
+.page .page-header .right .name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;    
+    padding-top: 50px;
+}
+.page .page-header .right .office{
+    font-size: 16px;
+    font-weight: normal;
+    color: #999999;
+    padding-top: 5px;
+}
+.page .page-header .right .university{
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 15px;
+}
+.page .page-header .right .department{
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.page .page-header-other{
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    max-width: 100%;
+}
+.page .page-header-other .left{
+    padding: 10px;
+    float: left;
+}
+.page .page-header-other .left .photo{
+    background-image: url(../img/profile.jpg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: 90%;
+}
+.page .page-header-other .right{
+    float: left;
+    text-align: left;
+    padding-top: 0;
+}
+.page .page-header-other .right .name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;    
+    padding-top: 10px;
+}
+.page .page-header-other .right .office{
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+    padding-top: 5px;
+}
+.page .page-header-other .right .university{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 15px;
+}
+.page .page-header-other .right .department{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.page .page-content-label{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.page .page-content{
+    max-width: 1024px;
+    min-height: 400px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.page .page-content h1,
+.page .page-content h2,
+.page .page-content h3,
+.page .page-content h4,
+.page .page-content h5,
+.page .page-content h6{
+    color: #333333;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.page .page-content h1{
+    font-size: 20px;
+}
+.page .page-content h2{
+    font-size: 18px;
+}
+.page .page-content h3{
+    font-size: 16px;
+}
+.page .page-content h4{
+    font-size: 16px;
+}
+.page .page-content h5{
+    font-size: 16px;
+}
+.page .page-content h6{
+    font-size: 16px;
+}
+.page .page-content ul{
+    margin-left: 15px;
+    list-style: square;
+}
+.page .page-content li{
+    padding: 5px;
+}
+.page .page-content a{
+    text-decoration: none;
+    color: #333333;
+}
+.page .page-content a:hover{
+    color: #999999;
+}
+
+.page .page-content p{
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    color: #333333;
+    padding: 5px 0;
+}
+
+.page .page-content p.reference{
+    padding-bottom: 10px;
+}
+
+.date {   background-color: blue; }
+.btb-header { }
+.rheader {  font-size: large }
+.bibref {  padding:3px; padding-left:15px;  vertical-align:top;}
+.bibtitle { font-weight:bold; }
+.bibbooktitle { font-style:italic; }
+.bibmenu {display:none} /* disables the [bibtex] and the like */
+.bibanchor {display:none} /* disables the index [1] or [Name2010], etc. depending on the value of the configuration value ABBRV_TYPE and BIBTEXBROWSER_LAYOUT
+.theader {display:none}
+.sheader {display:none} /* disables the year header e.g., 2001 */
+
+@media(max-width: 1024px){
+    .page{
+        width: 100%;
+    }
+    .page .page-header .left{
+        padding: 2%;
+        float: none;
+        width: 96%;
+    }
+    .page .page-header .left .photo{
+        margin: 0 auto;
+    }
+    .page .page-header .right .name{    
+        padding-top: 0px;
+    }
+    .page .page-header .right{
+        height: auto;
+    }
+    
+    .page .page-header-other{
+        
+    }
+    .page .page-header-other .left{
+        padding: 5%;
+        float: left;
+        width: 20%;
+    }
+    .page .page-header-other .left .photo{
+        background-image: url(../img/profile.jpg);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-position: center;
+        background-size: 90%;
+        display: block;
+    }
+    .page .page-header-other .right{
+        float: left;
+        text-align: left;
+        padding-top: 0;
+        width: 70%;
+    }
+    .page .page-header-other .right .name{
+        font-size: 14px;
+    }
+    .page .page-header-other .right .office{
+        font-size: 12px;
+    }
+    .page .page-header-other .right .university{
+        font-size: 12px;
+        display: none;
+    }
+    .page .page-header-other .right .department{
+        font-size: 12px;
+        display: none;
+    }
+}
+
+footer .copyright{
+    background: #333333;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer .copyright a{
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer .copyright a:hover{
+    color: #999999;
+}

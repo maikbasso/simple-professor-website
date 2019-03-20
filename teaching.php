@@ -5,7 +5,7 @@
 $pageTitle = "Teaching";
 
 include_once './ui/header.ui.php';
-include_once './plugins/parsedown/Parsedown.php';
+include_once './libraries/parsedown/Parsedown.php';
 
 $Parsedown = new Parsedown();
 echo $Parsedown->text(file_get_contents("./data/pages/teaching.md"));

@@ -8,7 +8,7 @@ include_once './ui/header.ui.php';
 
 $_GET['library']=1;
 define('BIBTEXBROWSER_BIBTEX_LINKS',false); // no [bibtex] link by default
-require_once('./plugins/bibtexbrowser/bibtexbrowser.php');
+require_once('./libraries/bibtexbrowser/bibtexbrowser.php');
 //global $db;
 $db = new BibDataBase();
 $db->load('./data/bibtex/publications.bib');

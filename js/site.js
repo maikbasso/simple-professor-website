@@ -23,7 +23,11 @@ window.onload = function(){
     });
     
     // resize Page Header if it is not a index page
-    if(!document.URL.includes("index")){
+    if(document.URL.includes("professionalInformation") ||
+       document.URL.includes("publications") ||
+       document.URL.includes("researchProjects") ||
+       document.URL.includes("teaching")
+       ){
         $('.page-header').addClass('page-header-other').removeClass('page-header');
     }
 };
